@@ -1,8 +1,9 @@
 # Ecom-Flash-RAG ⚡
-  
-**Blazing-Fast E-commerce Chatbot Powered by RAG**
+![Ecom-Flash-RAG Banner](https://img.shields.io/badge/Ecom--Flash--RAG-Fastest%20Ecommerce%20Chatbot-blueviolet)
 
-Welcome to **Ecom-Flash-RAG**, the ultimate Retrieval-Augmented Generation (RAG) chatbot for e-commerce! Experience lightning-fast product searches with answers delivered in a flash. Built with Qdrant for rapid vector retrieval, this project uses the ultra-fast `sentence-transformers/static-retrieval-mrl-en-v1` embedding model and OpenAI's `gpt-4o-mini` LLM to provide accurate, concise responses. Say goodbye to slow searches—Ecom-Flash-RAG ensures you get product details in record time, with features like duplicate removal and optimized retrieval.
+**Blazing-Fast E-commerce Chatbot Powered by RAG**
+Ecom-Flash-RAG is a high-performance Retrieval-Augmented Generation (RAG) chatbot engineered for rapid e-commerce product searches. Leveraging Qdrant for swift vector retrieval and the ultra-fast sentence-transformers/static-retrieval-mrl-en-v1 embedding model, this chatbot delivers accurate, concise responses in record time. Powered by OpenAI's gpt-4o-mini LLM, it ensures minimal latency and optimal performance. Key features include duplicate removal from the dataset, efficient batch uploads to Qdrant, and optimized retrieval techniques to limit search results and exclude unnecessary data, guaranteeing a seamless and lightning-fast user experience for product information retrieval.
+
 
 ## ✨ Features
 
@@ -30,6 +31,7 @@ graph TD
 User Query: Input a query (e.g., "Which shirt is under ₹500?").
 
 Embedding Generation: Query is embedded using static-retrieval-mrl-en-v1.
+[Fastest Embedding Model by Hugging Face](https://huggingface.co/blog/static-embeddings)
 
 Vector Search: Qdrant retrieves the top product context via cosine similarity.
 
@@ -43,7 +45,7 @@ Output: Delivers the answer to the user in a flash!
 Ecom-Flash-RAG leverages Qdrant for high-speed vector storage and retrieval. Check out the Qdrant cluster details below:
 Qdrant Node Graph
 The cluster runs on a free tier with 1 node, 4GiB disk, 1GiB RAM, and 0.5 vCPUs, ensuring efficient vector searches.
-![Ecom-Flash-RAG Banner](https://img.shields.io/badge/Ecom--Flash--RAG-Fastest%20Ecommerce%20Chatbot-blueviolet)
+![Qdrant Node Graph](https://github.com/Shreyas-Patil-01/Ecom-Flash-RAG/blob/main/Qdrant%20Node%20Graph.png)
 
 ## Prerequisites
 - Python 3.8+
